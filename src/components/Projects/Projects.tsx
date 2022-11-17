@@ -1,0 +1,70 @@
+import { Container, Row, Col } from "react-bootstrap";
+import { ProjectCard } from "./ProjectCard";
+import placeholderImg from "../../assets/img/placeholder.png";
+import colorSharp2 from "../../assets/img/color-sharp2.png";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
+import "./Projects.css";
+
+export const Projects = () => {
+  const projects = [
+    {
+      title: "1",
+      description: "Design & Development",
+      imgUrl: placeholderImg,
+    },
+    {
+      title: "1",
+      description: "Design & Development",
+      imgUrl: placeholderImg,
+    },
+    {
+      title: "1",
+      description: "Design & Development",
+      imgUrl: placeholderImg,
+    },
+    {
+      title: "1",
+      description: "Design & Development",
+      imgUrl: placeholderImg,
+    },
+    {
+      title: "1",
+      description: "Design & Development",
+      imgUrl: placeholderImg,
+    },
+  ];
+
+  return (
+    <section className="project" id="project">
+      <Container>
+        <Row>
+          <Col size={12}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <h2>Projects</h2>
+                  <p>
+                    some projects I've worked on. click on the images to find
+                    out more
+                  </p>
+
+                  <Row>
+                    {projects.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+      <img className="background-image-right" src={colorSharp2}></img>
+    </section>
+  );
+};
