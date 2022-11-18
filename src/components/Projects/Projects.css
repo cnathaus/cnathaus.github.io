@@ -49,7 +49,7 @@
       position: absolute;
       width: 0;
       height: 100%;
-      background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+      background: linear-gradient(90.21deg, #00E4F5 -5.91%, #006269 111.58%);
       top: 0;
       left: 0;
       z-index: -1;
@@ -81,7 +81,7 @@
   }
   .proj-imgbx::before {
     content: "";
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, #E6F4F1 -5.91%, #006F76 111.58%);
     opacity: 0.85;
     position: absolute;
     width: 100%;
@@ -110,9 +110,10 @@
     font-weight: 700;
     letter-spacing: 0.8px;
     line-height: 1.1em;
+    color: #fff;
   }
   .proj-txtx span {
-    font-style: italic;
+    color: #fff;
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.8px;

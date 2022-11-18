@@ -17,7 +17,7 @@ export const CV = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2020 - present"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            iconStyle={{ background: "#006F76", color: "#fff" }}
             icon={<MortarboardFill />}
           >
             <h3 className="vertical-timeline-element-title">
@@ -30,7 +30,7 @@ export const CV = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2010 - 2011"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            iconStyle={{ background: "#006F76 ", color: "#fff" }}
             icon={<MortarboardFill />}
           >
             <h3 className="vertical-timeline-element-title">Semester Abroad</h3>
@@ -44,7 +44,7 @@ export const CV = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2021 - 2022"
-            iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+            iconStyle={{ background: "#90E4EB", color: "#fff" }}
             icon={<BriefcaseFill />}
           >
             <h3 className="vertical-timeline-element-title">
@@ -58,8 +58,8 @@ export const CV = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2006 - 2008"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<MortarboardFill />}
+            iconStyle={{ background: "#00A9BD", color: "#fff" }}
+            icon={<WrenchAdjustable />}
           >
             <h3 className="vertical-timeline-element-title">Web Designer</h3>
             <h4 className="vertical-timeline-element-subtitle">
