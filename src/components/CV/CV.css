@@ -2,15 +2,21 @@
 .cv {
     padding: 80px 0;
     position: relative;
-    background-color: #ddd;
+    background-color: #fff;
 
   }
   .cv h2 {
       font-size: 45px;
       font-weight: 700;
-    text-align: center;
-    
+      text-align: center;  
   }
+  .cv h4 {
+      font-size: 25px;
+      font-weight: 700;
+      text-align: center;
+  }
+    
+  
   .cv p {
     color: #121212;
     opacity: 0.75;
