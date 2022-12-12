@@ -1,6 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import placeholderImg from "../../assets/img/placeholder.png";
+import humanRobotCollaborationImg from "../../assets/img/human_robot_collaboration.png";
+import robotWeldImg from "../../assets/img/robot_weld.png";
+import bmwLogoImg from "../../assets/img/BMW_logo.png";
+import fortoLogoImg from "../../assets/img/forto_logo.png";
 // import colorSharp2 from "../../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -11,22 +15,23 @@ export const Projects = () => {
     {
       title: "1",
       description: "Design & Development",
-      imgUrl: placeholderImg,
+      imgUrl: fortoLogoImg,
     },
     {
       title: "1",
       description: "Design & Development",
-      imgUrl: placeholderImg,
+      imgUrl: humanRobotCollaborationImg,
     },
     {
       title: "1",
       description: "Design & Development",
-      imgUrl: placeholderImg,
+      imgUrl: robotWeldImg,
     },
     {
       title: "1",
       description: "Design & Development",
-      imgUrl: placeholderImg,
+      imgUrl: bmwLogoImg,
+      imgStyle: { backgroundColor: "white" },
     },
     {
       title: "1",
@@ -48,10 +53,7 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>
-                    some projects I've worked on. click on the images to find
-                    out more
-                  </p>
+                  <p>some projects I've worked on.</p>
 
                   <Row>
                     {projects.map((project, index) => {
