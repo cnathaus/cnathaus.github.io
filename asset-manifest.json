@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.56243325.css",
-    "main.js": "/static/js/main.3013fef0.js",
+    "main.css": "/static/css/main.4ea3e382.css",
+    "main.js": "/static/js/main.06e06006.js",
+    "static/media/bachelor_thesis.png": "/static/media/bachelor_thesis.3f2efb74240afda094e7.png",
     "static/media/human_robot_collaboration.png": "/static/media/human_robot_collaboration.040356bd37674217e028.png",
     "static/media/robot_weld.png": "/static/media/robot_weld.31ad7de24cb1afa184ac.png",
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/BMW_logo.png": "/static/media/BMW_logo.bd3d0c0801391785cc2f.png",
+    "static/media/wzl_logo.png": "/static/media/wzl_logo.bb8187049f1d77be2046.png",
     "static/media/nav-icon1.svg": "/static/media/nav-icon1.3d526b8bd9f7edfb0be8b6aeb0e9cec2.svg",
     "index.html": "/index.html",
-    "main.56243325.css.map": "/static/css/main.56243325.css.map",
-    "main.3013fef0.js.map": "/static/js/main.3013fef0.js.map"
+    "main.4ea3e382.css.map": "/static/css/main.4ea3e382.css.map",
+    "main.06e06006.js.map": "/static/js/main.06e06006.js.map"
   },
   "entrypoints": [
-    "static/css/main.56243325.css",
-    "static/js/main.3013fef0.js"
+    "static/css/main.4ea3e382.css",
+    "static/js/main.06e06006.js"
   ]
 }
