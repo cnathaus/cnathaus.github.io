@@ -78,6 +78,7 @@
     border-radius: 30px;
     overflow: hidden;
     margin-bottom: 24px;
+    cursor: pointer;
   }
   .proj-imgbx::before {
     content: "";
@@ -86,7 +87,7 @@
     position: absolute;
     width: 100%;
     height: 0;
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in;
   }
   .proj-imgbx:hover::before {
     height: 100%;
@@ -126,3 +127,19 @@
     right: 0;
     z-index: -4;
   }
+
+  .video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  

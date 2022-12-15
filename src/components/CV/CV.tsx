@@ -2,7 +2,7 @@ import VerticalTimeline from "../VerticalTimeline/VerticalTimeline";
 import VerticalTimelineElement from "../VerticalTimeline/VerticalTimelineElement";
 
 import { MortarboardFill } from "react-bootstrap-icons";
-import { BriefcaseFill } from "react-bootstrap-icons";
+// import { BriefcaseFill } from "react-bootstrap-icons";
 import { WrenchAdjustable } from "react-bootstrap-icons";
 import { Container } from "react-bootstrap";
 import "./CV.css";

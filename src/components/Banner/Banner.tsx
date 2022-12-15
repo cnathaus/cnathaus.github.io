@@ -47,7 +47,7 @@ export const Banner = () => {
   };
 
   return (
-    <section className="banner" id="home">
+    <section className="banner" id="aboutme">
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
@@ -62,7 +62,7 @@ export const Banner = () => {
                   <h1>
                     {` I'm Chris and I'm a `}{" "}
                     <span className="txt-rotate">
-                      <span className="wrap">{text}</span>
+                      {/* <span className="wrap">{text}</span> */}
                     </span>
                   </h1>
                   <p>

@@ -64,8 +64,13 @@ export const NavBar = () => {
               </Nav.Link>
             </Nav>
             <span className="navbar-text">
+              {/* // linkedIn icon */}
               <div className="social-icon">
-                <a href="#">
+                <a
+                  href="https://www.linkedin.com/in/christian-nathaus-31728016a/"
+                  target={"_blank"}
+                  rel="noreferrer noopener"
+                >
                   <img src={navIcon1} alt="" />
                 </a>
               </div>
