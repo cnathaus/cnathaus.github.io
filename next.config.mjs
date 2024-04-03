@@ -5,8 +5,12 @@ const withBundleAnalyzer = bundleAnalyzer({
 });
 
 export default withBundleAnalyzer({
-  output: "export",
+  output: 'export',
   reactStrictMode: false,
+  images: {
+    unoptimized: true,
+  },
+  basePath: '/cnathaus.github.io',
   eslint: {
     ignoreDuringBuilds: true,
   },
