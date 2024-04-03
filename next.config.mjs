@@ -10,7 +10,7 @@ export default withBundleAnalyzer({
   images: {
     unoptimized: true,
   },
-  basePath: '/cnathaus.github.io',
+  // basePath: '/',
   eslint: {
     ignoreDuringBuilds: true,
   },
