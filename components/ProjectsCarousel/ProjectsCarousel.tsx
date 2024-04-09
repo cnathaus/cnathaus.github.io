@@ -7,118 +7,34 @@ import {
   Container,
   Group,
   Badge,
-  MantineColor,
 } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import { useMediaQuery } from '@mantine/hooks';
-import img from '../../assets/thumbnails/IMG_3631_1.jpeg';
-import img2 from '../../assets/thumbnails/DSC00723.jpeg';
+
+import { projects, Project, technologyGradientColorMap } from '@/assets/data/projects';
+
 import classes from './ProjectsCarousel.module.scss';
 import { useOpenProjectModal } from '@/hooks/useOpenProjectModal';
 
-enum Technology {
-  Python = 'Python',
-  TypeScript = 'TypeScript',
-  AI = 'AI',
-  CSharp = 'C#',
-  Robotics = 'Robotics',
-}
-
-type TechnologyGradientColorMap = {
-  [key in Technology]: {
-    startColor: MantineColor;
-    midColor: MantineColor;
-    endColor: MantineColor;
-  };
-};
-
-const technologyGradientColorMap: TechnologyGradientColorMap = {
-  Python: {
-    startColor: 'var(--mantine-color-pink-filled) 0%',
-    midColor: 'var(--mantine-color-orange-filled) 50%',
-    endColor: 'var(--mantine-color-yellow-filled) 100%',
-  },
-  TypeScript: {
-    startColor: 'var(--mantine-color-indigo-9) 0%',
-    midColor: 'var(--mantine-color-blue-9) 50%',
-    endColor: 'var(--mantine-color-blue-filled) 100%',
-  },
-  AI: {
-    startColor: 'var(--mantine-color-pink-filled) 0%',
-    midColor: 'var(--mantine-color-grape-filled) 50%',
-    endColor: 'var(--mantine-color-red-filled) 100%',
-  },
-  'C#': {
-    startColor: '#6A1577 0%',
-    midColor: '#813084 50%',
-    endColor: '#9A4993 100%',
-  },
-  Robotics: {
-    startColor: '#333333 0%', // Dark gray
-    midColor: '#666666 50%', // Mid gray
-    endColor: '#999999 100%',
-  },
-};
-
-const projects = [
-  {
-    image: img.src,
-    title: 'Active Preference Learning',
-    category: "Master's Thesis @ TUM",
-    technologies: [Technology.AI, Technology.Python, Technology.CSharp, Technology.Robotics],
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1559494007-9f5847c49d94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'AI Part Identification',
-    category: 'Working Student Job @ RWTH Aachen',
-    technologies: [Technology.AI, Technology.Python, Technology.TypeScript],
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'AI in Automotive',
-    category: 'Internship @ BMW Israel',
-    technologies: [Technology.AI, Technology.Python],
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1608481337062-4093bf3ed404?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Web Development',
-    category: 'Practical Course @ Forto',
-    technologies: [Technology.TypeScript],
-  },
-  {
-    image: img2.src,
-    title: 'Robot Welding',
-    category: 'Practical Course @ Robco',
-    technologies: [Technology.Robotics],
-  },
-];
-
-interface Project {
-  image: string;
-  title: string;
-  category: string;
-  technologies: Technology[];
-}
-
 interface CardProps extends Project {}
 
-function openProjectModal() {
-  console.log('Open project modal');
-  useOpenProjectModal();
+function openProjectModal(props: CardProps) {
+  useOpenProjectModal(props);
 }
 
-function Card({ image, title, category, technologies }: CardProps) {
+function Card(props: CardProps) {
+  const { image, title, category, technologies, video } = props;
   return (
     <Paper
       shadow="md"
       p="xl"
       radius="md"
-      style={{ backgroundImage: `url(${image})` }}
+      style={{
+        backgroundImage: `url(${image.src})`,
+        backgroundSize: image.scale ? `${image.scale * 100}%` : 'cover',
+      }}
       className={classes.card}
     >
       <div>
@@ -129,7 +45,7 @@ function Card({ image, title, category, technologies }: CardProps) {
           {title}
         </Title>
       </div>
-      Technologies
+      <Title order={5}>Skills</Title>
       <Group gap="xs">
         {technologies.map((tech) => {
           const gradient = technologyGradientColorMap[tech];
@@ -158,8 +74,8 @@ function Card({ image, title, category, technologies }: CardProps) {
           );
         })}
       </Group>
-      <Button variant="white" color="dark" onClick={openProjectModal}>
-        Learn more (with Video)
+      <Button variant="white" color="dark" onClick={() => openProjectModal(props)}>
+        Read More {video ? '(Video)' : null}
       </Button>
     </Paper>
   );
@@ -177,8 +93,15 @@ export function ProjectsCarousel() {
   ));
 
   return (
-    <Container fluid>
-      Some projects I&#39;ve worked on.
+    <Container size="xl" className={classes.container}>
+      <Title
+        order={2}
+        className={classes.title}
+        style={{ textAlign: 'center', color: 'black', marginBottom: '2rem' }}
+      >
+        {/* Some projects I&#39;ve worked on. */}
+        Projects
+      </Title>
       <Carousel
         slideSize={{ base: '100%', sm: '40%' }}
         slideGap={{ base: 'xl', sm: 6 }}

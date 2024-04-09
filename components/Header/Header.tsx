@@ -1,13 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import { Container, Group, Burger } from '@mantine/core';
+import { Container, Group, Burger, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Header.module.css';
 
 const links = [
-  { link: '/projects', label: 'Projects' },
   { link: '/about', label: 'About Me' },
+  { link: '/projects', label: 'Projects' },
   { link: '/cv', label: 'CV' },
   { link: '/contact', label: 'Contact' },
 ];
@@ -34,7 +34,8 @@ export function Header() {
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
-        Christian Nathaus
+        <Text>Christian Nathaus - AI & Robotics</Text>
+
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>

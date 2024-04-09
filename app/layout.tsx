@@ -6,7 +6,7 @@ import { ModalsProvider } from '@mantine/modals';
 import { theme } from '../theme';
 
 export const metadata = {
-  title: 'Christian Nathaus - Robotics & AI Engineer',
+  title: 'Christian Nathaus - AI & Robotics',
 };
 
 export default function RootLayout({ children }: { children: any }) {
@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: any }) {
     <html lang="en">
       <head>
         <ColorSchemeScript />
-        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/logo192.png" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"

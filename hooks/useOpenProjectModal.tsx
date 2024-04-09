@@ -1,14 +1,10 @@
-import { Text } from '@mantine/core';
 import { modals } from '@mantine/modals';
+import { Project } from '@/assets/data/projects';
+import { ProjectModal } from '@/components/ProjectModal/ProjectModal';
 
-export function useOpenProjectModal() {
+export function useOpenProjectModal(props: Project) {
   modals.open({
-    title: 'Please confirm your action',
-    children: (
-      <Text size="sm">
-        This action is so important that you are required to confirm it with a modal. Please click
-        one of these buttons to proceed.
-      </Text>
-    ),
+    size: 'xxl',
+    children: <ProjectModal {...props} />,
   });
 }
