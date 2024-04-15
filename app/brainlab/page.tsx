@@ -1,13 +1,13 @@
 'use client';
 
-import { Grid, useMantineColorScheme } from '@mantine/core';
+import { useMantineColorScheme } from '@mantine/core';
 import { Header } from '../../components/Header/Header';
 import { Welcome } from '../../components/Welcome/Welcome';
 import { ProjectsCarousel } from '@/components/ProjectsCarousel/ProjectsCarousel';
 
 export default function HomePage() {
-  const { setColorScheme } = useMantineColorScheme();
-  setColorScheme('light');
+  // const { setColorScheme } = useMantineColorScheme();
+  // setColorScheme('light');
   return (
     <>
       <Header />

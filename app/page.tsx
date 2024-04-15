@@ -10,8 +10,8 @@ import { ProjectsCarousel } from '@/components/ProjectsCarousel/ProjectsCarousel
 import { CV } from '@/components/CV/CV';
 
 export default function HomePage() {
-  const { setColorScheme } = useMantineColorScheme();
-  setColorScheme('light');
+  // const { setColorScheme } = useMantineColorScheme();
+  // setColorScheme('light');
   const [scroll, scrollTo] = useWindowScroll();
   return (
     <>
