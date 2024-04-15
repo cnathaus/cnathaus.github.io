@@ -1,6 +1,6 @@
 'use client';
 
-import { Affix, Button, Transition, rem, useMantineColorScheme } from '@mantine/core';
+import { Affix, Button, Transition, rem } from '@mantine/core';
 import { ArrowUp } from 'tabler-icons-react';
 import { useWindowScroll } from '@mantine/hooks';
 import { Header } from '../components/Header/Header';
@@ -10,8 +10,6 @@ import { ProjectsCarousel } from '@/components/ProjectsCarousel/ProjectsCarousel
 import { CV } from '@/components/CV/CV';
 
 export default function HomePage() {
-  // const { setColorScheme } = useMantineColorScheme();
-  // setColorScheme('light');
   const [scroll, scrollTo] = useWindowScroll();
   return (
     <>
@@ -23,6 +21,8 @@ export default function HomePage() {
               leftSection={<ArrowUp size="1rem" />}
               style={transitionStyles}
               onClick={() => scrollTo({ y: 0 })}
+              variant="gradient"
+              gradient={{ from: 'cyan', to: 'blue', deg: 90 }}
             >
               Scroll to top
             </Button>

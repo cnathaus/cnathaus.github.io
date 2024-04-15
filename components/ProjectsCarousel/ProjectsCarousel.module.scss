@@ -1,5 +1,5 @@
-.container {
-  background-color: var(--mantine-color-gray-3);
+.overlay {
+  width: calc(100% - var(--carousel-slide-gap));
 }
 
 .card {
@@ -28,4 +28,12 @@
   font-weight: 700;
   text-transform: uppercase;
   cursor: default;
+}
+
+.skills {
+  color: var(--mantine-color-white);
+  opacity: 1;
+  font-weight: 700;
+  cursor: default;
+  margin-bottom: var(--mantine-spacing-xs);
 }
