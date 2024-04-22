@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Button,
   Paper,
@@ -15,7 +17,6 @@ import Autoplay from 'embla-carousel-autoplay';
 import { useMediaQuery } from '@mantine/hooks';
 
 import { projects, Project, technologyGradientColorMap } from '@/assets/data/projects';
-import { GradientOutlineButton } from '@/components/GradientOutlineButton/GradientOutlineButton';
 import classes from './ProjectsCarousel.module.scss';
 import { useOpenProjectModal } from '@/hooks/useOpenProjectModal';
 
@@ -80,8 +81,9 @@ function Card(props: CardProps) {
           variant="gradient"
           gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
           onClick={() => openProjectModal(props)}
+          classNames={{ root: classes.root }}
         >
-          Read More {video ? '(Video)' : null}
+          Learn More {video ? '(Video)' : null}
         </Button>
         {/* <GradientOutlineButton
           onClick={() => openProjectModal(props)}
@@ -112,14 +114,14 @@ export function ProjectsCarousel() {
   ));
 
   return (
-    <Container size="xl" className={classes.container}>
+    <Container size="xl" className={classes.container} id="projects">
       <Title
         order={2}
         className={classes.title}
-        style={{ textAlign: 'center', color: 'black', marginBottom: '2rem' }}
+        style={{ textAlign: 'center', color: 'black', marginBottom: '2rem', marginTop: '2rem' }}
       >
         {/* Some projects I&#39;ve worked on. */}
-        Projects
+        Work Experience & Projects
       </Title>
       <Carousel
         slideSize={{ base: '100%', sm: '40%' }}

@@ -1,0 +1,11 @@
+.inner {
+  background: var(--mantine-color-body);
+  color: var(--mantine-color-text);
+  border-radius: calc(var(--button-radius) - 2px);
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+}
+
+.inner:hover {
+  background: var(--mantine-color-gray-1);
+}

@@ -6,7 +6,7 @@ import { ModalsProvider } from '@mantine/modals';
 import { theme } from '../theme';
 
 export const metadata = {
-  title: 'Christian Nathaus - AI & Robotics',
+  title: 'Christian Nathaus',
 };
 
 export default function RootLayout({ children }: { children: any }) {

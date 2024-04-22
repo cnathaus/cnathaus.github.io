@@ -1,4 +1,5 @@
 import { Button, rem } from '@mantine/core';
+import classes from './GradientOutlineButton.module.scss';
 
 export function GradientOutlineButton({ text, onClick }: { text: string; onClick: () => void }) {
   const gradient =
@@ -7,19 +8,12 @@ export function GradientOutlineButton({ text, onClick }: { text: string; onClick
   return (
     <Button
       radius="md"
+      classNames={{ inner: classes.inner }}
       styles={{
         root: {
           padding: rem(2),
           border: 0,
           backgroundImage: gradient,
-        },
-
-        inner: {
-          background: 'var(--mantine-color-body)',
-          color: 'var(--mantine-color-text)',
-          borderRadius: 'calc(var(--button-radius) - 2px)',
-          paddingLeft: 'var(--mantine-spacing-md)',
-          paddingRight: 'var(--mantine-spacing-md)',
         },
 
         label: {

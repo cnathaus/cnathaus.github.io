@@ -1,7 +1,7 @@
 import { AspectRatio, Badge, Container, Group, Stack, Text, Title } from '@mantine/core';
 import { Project, technologyGradientColorMap } from '@/assets/data/projects';
 import classes from './ProjectModal.module.css';
-
+//
 interface ProjectModalProps extends Project {}
 
 export function ProjectModal({
@@ -20,8 +20,7 @@ export function ProjectModal({
         <Title order={3} className={classes.title}>
           {title}
         </Title>
-
-        <Text>{description}</Text>
+        {description}
         <Title order={5}>Skills</Title>
         <Group gap="xs">
           {technologies.map((tech) => {
