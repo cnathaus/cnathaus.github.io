@@ -39,7 +39,7 @@ export default function HomePage() {
 
       <ProjectsCarousel />
       <CV />
-      <Why companyName={companyName} />
+      {/* <Why companyName={companyName} /> */}
       <Contact />
     </>
   );

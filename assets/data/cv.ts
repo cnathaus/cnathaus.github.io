@@ -17,7 +17,16 @@ export const categoryColorMap: CategoryColorMap = {
   [Category.WorkExperience]: 'var(--mantine-color-red-9)',
 };
 
-export const cv = [
+export interface CVEntry {
+  title: string;
+  subtitle: string;
+  date: string;
+  logo: { src: string; imageProps: { scale: number; marginTop?: number } };
+  category: Category;
+  details?: string[];
+}
+
+export const cv: CVEntry[] = [
   // {
   //   title: 'Maybe BrainLab?', // TODO: integrate this differently
   //   // subtitle: 'Robotics & Software Engineer',
@@ -30,6 +39,7 @@ export const cv = [
     date: '2023',
     logo: { src: yonsei_logo.src, imageProps: { scale: 0.7 } },
     category: Category.Education,
+    details: ['top university in South Korea']
   },
   {
     title: 'M.Sc. Robotics, Cognition, Intelligence',
@@ -37,6 +47,7 @@ export const cv = [
     date: '2020 - 2023',
     logo: { src: tum_logo.src, imageProps: { scale: 0.7 } },
     category: Category.Education,
+    details: ['passed with distinction']
   },
   {
     title: 'Semester Abroad',
@@ -44,6 +55,7 @@ export const cv = [
     date: '2019',
     logo: { src: nus_logo.src, imageProps: { scale: 0.7, marginTop: 8 } },
     category: Category.Education,
+    details: ['top 8 university worldwide', 'received DAAD PROMOS scholarship', 'took classes in Robotics'],
   },
   {
     title: 'B.Sc. Mechanical Engineering',
@@ -51,5 +63,6 @@ export const cv = [
     date: '2016 - 2020',
     logo: { src: rwth_logo.src, imageProps: { scale: 0.7 } },
     category: Category.Education,
+    details: ['Dean\'s List (top 5% of graduating class)'],
   },
 ];

@@ -1,4 +1,4 @@
-import { Container, Title } from '@mantine/core';
+import { Container, Text, Title } from '@mantine/core';
 import classes from './Contact.module.scss';
 
 export function Contact() {
@@ -11,6 +11,11 @@ export function Contact() {
       >
         Contact Me
       </Title>
+      <Text>
+        I'm currently looking for a PhD position or full-time job in robotics. If you have any
+        questions or would like to get in touch, please feel free to contact me via email or
+        LinkedIn.
+      </Text>
     </Container>
   );
 }

@@ -1,4 +1,4 @@
-import { Avatar, Button, Container, Title, Text, Timeline, Stack } from '@mantine/core';
+import { Avatar, Button, List, Container, Title, Text, Timeline, Stack } from '@mantine/core';
 import { categoryColorMap, cv } from '@/assets/data/cv';
 import classes from './CV.module.scss';
 
@@ -43,6 +43,20 @@ export function CV() {
         >
           Education
         </Title>
+
+        <Text>
+          TODO:
+
+          Starting with mechanical engineering at RWTH Aachen, I took a detour into robotics during a game-changing semester at NUS, where I explored software dynamics. This journey fueled my fascination with human-robot collaboration, inspiring me to dive deeper with a master's in robotics and AI at TUM. Now, my aim is to channel this passion into meaningful contributions within medical or industrial robotics, driven by the desire to make a real difference in people's lives through cutting-edge technology.
+
+          I studied mechanical engineering at RWTH Aachen. There, I learned about the fundamentals of engineering.
+          During my semester abroad at NUS, I first got in touch with robotics. I wanted to focus more on software, so
+          I decided to pursue a master's degree in robotics and AI at TUM. There, I got into human-robot collaboration.
+
+          I found that I'm passionate about improving people's lives with robots.
+
+          Now, i would ideally like to continue my journey in robotics research with a position in medical robotics or industrial robotics with a focus on human-robot collaboration.
+        </Text>
 
         {/* <Title order={3} style={{ textAlign: 'center', color: 'black', marginBottom: '2rem' }}>
           Education | University Projects | Projects | Work Experience
@@ -100,6 +114,14 @@ export function CV() {
                 <Text c="dimmed" size="sm">
                   {item.date}
                 </Text>
+                {item.details && (
+                  <List c="dimmed" size="sm">
+                    {item.details.map((detail) => (
+                      <List.Item>{detail}</List.Item>
+                    ))}
+                  </List>
+                )}
+
               </Timeline.Item>
             );
           })}

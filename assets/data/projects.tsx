@@ -7,6 +7,7 @@ import img2 from '../thumbnails/DSC00723.jpeg';
 import bmw_logo from '../thumbnails/bmw_logo.png';
 import forto_logo from '../thumbnails/forto_logo.png';
 import rwth_logo from '../thumbnails/rwth_logo_full.png';
+import bachelor_thesis_img from '../thumbnails/bachelor_thesis.png';
 
 export enum Technology {
   Python = 'Python',
@@ -150,4 +151,22 @@ export const projects: Project[] = [
       </Text>
     ),
   },
+  {
+    image: { src: bachelor_thesis_img.src },
+    title: 'AI Task Planning for Service Robotics',
+    category: 'Bachelor’s Thesis @ RWTH Aachen',
+    technologies: [Technology.Robotics, Technology.Python, Technology.AI],
+    description: (
+      <Text>
+        TODO : For my Bachelor’s Thesis, I worked on how to plan tasks for a service robot in a way that
+        would be efficient and safe. The robot was to be used in a hospital to deliver medication to
+        patients. The problem was that the robot had to navigate through a busy hospital corridor
+        and had to avoid collisions with people and other obstacles. I solved this by developing a
+        system that could predict the future movements of people and then plan the robot’s path
+        accordingly. The system was tested in a simulation and showed promising results. I’m happy
+        to send you a copy of my thesis upon request.
+      </Text>
+    ),
+    video: "https://www.youtube.com/embed/KgFZVdwmP3w?si=C5TZ2im7VVe04D0g"
+  }
 ];

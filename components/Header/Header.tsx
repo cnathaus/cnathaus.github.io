@@ -31,17 +31,17 @@ export function Header({ companyName }: { companyName: string }) {
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
 
-  const linksWithCompany = [
-    ...links.slice(0, -1),
-    {
-      link: 'why',
-      label: `Why ${companyName}?`,
-      icon: <IconFingerprint style={{ ...iconStyles }} />,
-    },
-    links.slice(-1)[0],
-  ];
+  // const linksWithCompany = [
+  //   ...links.slice(0, -1),
+  //   {
+  //     link: 'why',
+  //     label: `Why ${companyName}?`,
+  //     icon: <IconFingerprint style={{ ...iconStyles }} />,
+  //   },
+  //   links.slice(-1)[0],
+  // ];
 
-  const items = linksWithCompany.map((link) => (
+  const items = links.map((link) => (
     <a
       key={link.label}
       href={link.link}

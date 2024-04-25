@@ -4,6 +4,10 @@ import { GradientOutlineButton } from '@/components/GradientOutlineButton/Gradie
 import img from '@/assets/thumbnails/welcome_image.jpg';
 import classes from './Welcome.module.css';
 
+function downloadCV() {
+  window.open('/CV.pdf', '_blank');
+}
+
 export function Welcome() {
   return (
     <div id="about">
@@ -12,14 +16,19 @@ export function Welcome() {
         <Text inherit variant="gradient" component="span" gradient={{ from: 'green', to: 'blue' }}>
           Christian
         </Text>
-        {/* TODO: add typewriter */}
       </Title>
       {/* <PlaceholderImage width={800} height={600} /> */}
       <Group justify="center">
         <Image radius="md" h={400} src={img.src} fit="contain" />
         <Stack>
-          <Text> I like stuff and things</Text>
-          <GradientOutlineButton text="Download CV" onClick={() => console.log('clicked')} />
+          <Text>
+
+            I'm passionate about enabling robots to help humans in the real world.
+            I have gained experience in robotics research and software development through my studies, internships, and projects.
+            If you're interested, check out more below!
+
+          </Text>
+          <GradientOutlineButton text="Download CV" onClick={downloadCV} />
         </Stack>
       </Group>
     </div>
