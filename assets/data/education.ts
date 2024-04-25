@@ -17,7 +17,7 @@ export const categoryColorMap: CategoryColorMap = {
   [Category.WorkExperience]: 'var(--mantine-color-red-9)',
 };
 
-export interface CVEntry {
+export interface EducationEntry {
   title: string;
   subtitle: string;
   date: string;
@@ -26,7 +26,7 @@ export interface CVEntry {
   details?: string[];
 }
 
-export const cv: CVEntry[] = [
+export const education: EducationEntry[] = [
   // {
   //   title: 'Maybe BrainLab?', // TODO: integrate this differently
   //   // subtitle: 'Robotics & Software Engineer',

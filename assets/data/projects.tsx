@@ -71,7 +71,7 @@ export const projects: Project[] = [
     description: (
       <Text fw={500} c="light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0))">
         For my Master’s Thesis we investigated how to make robot behaviour adaptable to an
-        individual’s needs and preferences. Personalized robot behaviour has potential applications
+        individual human’s needs and preferences. Personalized robot behaviour has potential applications
         in multiple domains, e.g. in industrial environments where a worker may have a specific
         preference for how tools should be handed to them. We accomplished this by applying active
         preference learning (link) wherein the user is prompted to either demonstrate the desired
@@ -84,26 +84,6 @@ export const projects: Project[] = [
       </Text>
     ),
     video: 'https://www.youtube.com/embed/0RNFAXUEJ5U?si=0r8iTjX5jb5GPrUE',
-  },
-  {
-    image: {
-      src: rwth_logo.src,
-      scale: 0.6,
-    },
-    title: 'AI Part Identification',
-    category: 'Working Student Job @ RWTH Aachen',
-    technologies: [Technology.AI, Technology.Python, Technology.TypeScript],
-    description: (
-      <Text>
-        For my working student job, I worked on how to apply AI to identify parts made using
-        Additive Manufacturing (AM). Currently, workers have a hard time figuring out which part
-        is.. as there are as many as 30 parts on one printing bed. The solution we came up with was
-        to render the part models in Blender and train a neural network that could then be used to
-        identify the parts by photographing them. Specifically, my work consisted of implementing
-        the whole pipeline from receiving a customer’s order, rendering and training the models in
-        the backend, developing a web interface for administrators and an app for workers.{' '}
-      </Text>
-    ),
   },
   {
     image: { src: bmw_logo.src, scale: 0.3 },
@@ -138,20 +118,6 @@ export const projects: Project[] = [
     video: 'https://www.youtube.com/embed/OLL2c77cqdY?si=WNwLOrYnEwJLMcDK',
   },
   {
-    image: { src: forto_logo.src, scale: 0.6 },
-    title: 'Web Development',
-    category: 'Practical Course @ Forto',
-    technologies: [Technology.TypeScript],
-    description: (
-      <Text>
-        The task was to develop software for tracking container shipments using a GPS tracker. I
-        worked on backend development I was also responsible for interfacing between teams and
-        making sure they were on the same page. I’m happy to send you a letter of recommendation I
-        received for my work upon request.
-      </Text>
-    ),
-  },
-  {
     image: { src: bachelor_thesis_img.src },
     title: 'AI Task Planning for Service Robotics',
     category: 'Bachelor’s Thesis @ RWTH Aachen',
@@ -168,5 +134,39 @@ export const projects: Project[] = [
       </Text>
     ),
     video: "https://www.youtube.com/embed/KgFZVdwmP3w?si=C5TZ2im7VVe04D0g"
-  }
+  },
+  {
+    image: {
+      src: rwth_logo.src,
+      scale: 0.6,
+    },
+    title: 'AI Part Identification',
+    category: 'Working Student Job @ RWTH Aachen',
+    technologies: [Technology.AI, Technology.Python, Technology.TypeScript],
+    description: (
+      <Text>
+        For my working student job, I worked on how to apply AI to identify parts made using
+        Additive Manufacturing (AM). Currently, workers have a hard time figuring out which part
+        is.. as there are as many as 30 parts on one printing bed. The solution we came up with was
+        to render the part models in Blender and train a neural network that could then be used to
+        identify the parts by photographing them. Specifically, my work consisted of implementing
+        the whole pipeline from receiving a customer’s order, rendering and training the models in
+        the backend, developing a web interface for administrators and an app for workers.{' '}
+      </Text>
+    ),
+  },
+  {
+    image: { src: forto_logo.src, scale: 0.6 },
+    title: 'Web Development',
+    category: 'Practical Course @ Forto',
+    technologies: [Technology.TypeScript],
+    description: (
+      <Text>
+        The task was to develop software for tracking container shipments using a GPS tracker. I
+        worked on backend development I was also responsible for interfacing between teams and
+        making sure they were on the same page. I’m happy to send you a letter of recommendation I
+        received for my work upon request.
+      </Text>
+    ),
+  },
 ];

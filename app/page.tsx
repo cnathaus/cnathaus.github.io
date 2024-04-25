@@ -6,7 +6,7 @@ import { useWindowScroll } from '@mantine/hooks';
 import { Header } from '@/components/Header/Header';
 import { Welcome } from '@/components/Welcome/Welcome';
 import { ProjectsCarousel } from '@/components/ProjectsCarousel/ProjectsCarousel';
-import { CV } from '@/components/CV/CV';
+import { Education } from '@/components/Education/Education';
 import { Contact } from '@/components/Contact/Contact';
 import { Why } from '@/components/Why/Why';
 
@@ -38,7 +38,7 @@ export default function HomePage() {
       <Welcome />
 
       <ProjectsCarousel />
-      <CV />
+      <Education />
       {/* <Why companyName={companyName} /> */}
       <Contact />
     </>

@@ -1,6 +1,6 @@
 import { Avatar, Button, List, Container, Title, Text, Timeline, Stack } from '@mantine/core';
-import { categoryColorMap, cv } from '@/assets/data/cv';
-import classes from './CV.module.scss';
+import { categoryColorMap, education } from '@/assets/data/education';
+import classes from './Education.module.scss';
 
 interface TimeLineAvatarProps {
   src: string;
@@ -32,9 +32,9 @@ function timelineAvatar({ src, imageProps }: TimeLineAvatarProps) {
   );
 }
 
-export function CV() {
+export function Education() {
   return (
-    <Container fluid id="cv">
+    <Container fluid id="education">
       <Stack justify="center" align="center">
         <Title
           order={2}
@@ -49,13 +49,13 @@ export function CV() {
 
           Starting with mechanical engineering at RWTH Aachen, I took a detour into robotics during a game-changing semester at NUS, where I explored software dynamics. This journey fueled my fascination with human-robot collaboration, inspiring me to dive deeper with a master's in robotics and AI at TUM. Now, my aim is to channel this passion into meaningful contributions within medical or industrial robotics, driven by the desire to make a real difference in people's lives through cutting-edge technology.
 
-          I studied mechanical engineering at RWTH Aachen. There, I learned about the fundamentals of engineering.
+          {/* I studied mechanical engineering at RWTH Aachen. There, I learned about the fundamentals of engineering.
           During my semester abroad at NUS, I first got in touch with robotics. I wanted to focus more on software, so
           I decided to pursue a master's degree in robotics and AI at TUM. There, I got into human-robot collaboration.
 
           I found that I'm passionate about improving people's lives with robots.
 
-          Now, i would ideally like to continue my journey in robotics research with a position in medical robotics or industrial robotics with a focus on human-robot collaboration.
+          Now, i would ideally like to continue my journey in robotics research with a position in medical robotics or industrial robotics with a focus on human-robot collaboration. */}
         </Text>
 
         {/* <Title order={3} style={{ textAlign: 'center', color: 'black', marginBottom: '2rem' }}>
@@ -91,7 +91,7 @@ export function CV() {
           })}
         </Timeline> */}
         <Timeline bulletSize={bulletSize} reverseActive>
-          {cv.map((item, index) => {
+          {education.map((item, index) => {
             const color = categoryColorMap[item.category];
             return (
               <Timeline.Item

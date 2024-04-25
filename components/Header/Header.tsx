@@ -19,7 +19,7 @@ const links = [
     label: 'Projects',
     icon: <IconActivity style={{ ...iconStyles }} />,
   },
-  { link: 'cv', label: 'CV', icon: <IconGauge style={{ ...iconStyles }} /> },
+  { link: 'education', label: 'Education', icon: <IconGauge style={{ ...iconStyles }} /> },
   {
     link: 'contact',
     label: 'Contact',
