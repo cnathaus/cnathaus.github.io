@@ -22,10 +22,9 @@ export function Welcome() {
         <Image radius="md" h={400} src={img.src} fit="contain" />
         <Stack>
           <Text>
-
             I'm passionate about enabling robots to help humans in the real world.
             I have gained experience in robotics research and software development through my studies, internships, and projects.
-            If you're interested, check out more below!
+            Check out more below!
 
           </Text>
           <GradientOutlineButton text="Download CV" onClick={downloadCV} />
