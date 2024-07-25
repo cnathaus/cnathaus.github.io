@@ -15,18 +15,19 @@ export function Welcome() {
   return (
     <div id="about">
       <Grid justify="center" align="center" mt={75} gutter={60}>
-        <Grid.Col span="content">
+        <Grid.Col span="content" order={{ base: 2, md: 1, lg: 1 }}>
           <Image radius="md" h={400} src={img.src} fit="contain" />
           {/* <Image radius="md" h={400} src={img2.src} fit="contain" />
           <Image radius="md" h={400} src={img3.src} fit="contain" /> */}
         </Grid.Col>
-        <Grid.Col span={3}>
+        <Grid.Col span={{ base: 12, md: 6, lg: 3 }} order={{ base: 1, md: 2, lg: 2 }}>
           <Title
             className={classes.title}
             // ta="center"
             // mt={50}
             mb={45}
             c="var(--mantine-color-default-color)"
+            style={{ justifyContent: 'center', textAlign: 'center' }}
           >
             Hi👋 I&#39;m Christian
             {/* <Text
@@ -42,6 +43,7 @@ export function Welcome() {
             fw={500}
             c="light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0))"
             mb={50}
+            style={{ textAlign: 'center' }}
           >
             {' '}
             I&apos;m passionate about enhancing human-robot interactions and leveraging AI methods
@@ -51,9 +53,11 @@ export function Welcome() {
             playing beach volleyball. Find out more about me below!
           </Text>
 
-          <GradientOutlineButton text="Check out my CV" onClick={downloadCV} />
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <GradientOutlineButton text="Check out my CV" onClick={downloadCV} />
+          </div>
         </Grid.Col>
-        <Grid.Col span="content">
+        <Grid.Col span="content" order={{ base: 3, md: 3, lg: 3 }}>
           <Image radius="md" h={400} src={img3.src} fit="contain" />
         </Grid.Col>
       </Grid>
