@@ -20,7 +20,7 @@ export function Welcome() {
           {/* <Image radius="md" h={400} src={img2.src} fit="contain" />
           <Image radius="md" h={400} src={img3.src} fit="contain" /> */}
         </Grid.Col>
-        <Grid.Col span={{ base: 12, md: 6, lg: 6 }} order={{ base: 1, md: 2, lg: 2 }}>
+        <Grid.Col span={{ base: 12, md: 5, lg: 5 }} order={{ base: 1, md: 2, lg: 2 }}>
           <Title
             className={classes.title}
             // ta="center"
