@@ -2,6 +2,7 @@
 
 import {
   Button,
+  Grid,
   Paper,
   Title,
   useMantineTheme,
@@ -115,32 +116,36 @@ export function ProjectsCarousel() {
   ));
 
   return (
-    <Container size="xl" id="projects">
-      <Title
-        order={2}
-        className={classes.title}
-        style={{
-          textAlign: 'center',
-          color: 'var(--mantine-color-default-color)',
-          marginBottom: '2rem',
-          marginTop: '3rem',
-        }}
-      >
-        {/* Some projects I&#39;ve worked on. */}
-        Work Experience & Projects
-      </Title>
-      <Carousel
-        slideSize={{ base: '100%', sm: '40%' }}
-        slideGap={{ base: 'xl', sm: 6 }}
-        align="start"
-        slidesToScroll={1}
-        withIndicators
-        plugins={[autoplay.current]}
-        onMouseEnter={autoplay.current.stop}
-        onMouseLeave={autoplay.current.reset}
-      >
-        {slides}
-      </Carousel>
+    <Container size="lg" id="projects">
+      <Grid justify="center" align="center" gutter={60}>
+        <Grid.Col span={10}>
+          <Title
+            order={2}
+            className={classes.title}
+            style={{
+              textAlign: 'center',
+              color: 'var(--mantine-color-default-color)',
+              marginBottom: '2rem',
+              marginTop: '3rem',
+            }}
+          >
+            {/* Some projects I&#39;ve worked on. */}
+            Work Experience & Projects
+          </Title>
+          <Carousel
+            slideSize={{ base: '100%', sm: '40%' }}
+            slideGap={{ base: 'xl', sm: 6 }}
+            align="start"
+            slidesToScroll={1}
+            withIndicators
+            plugins={[autoplay.current]}
+            onMouseEnter={autoplay.current.stop}
+            onMouseLeave={autoplay.current.reset}
+          >
+            {slides}
+          </Carousel>
+        </Grid.Col>
+      </Grid>
     </Container>
   );
 }

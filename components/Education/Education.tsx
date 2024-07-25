@@ -49,7 +49,7 @@ export function Education() {
               style={{
                 textAlign: 'center',
                 color: 'var(--mantine-color-default-color)',
-                marginTop: '3rem',
+                marginTop: '1rem',
                 marginBottom: '1.5rem',
               }}
             >

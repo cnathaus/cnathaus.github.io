@@ -18,7 +18,7 @@ export function Contact() {
         Contact Me
       </Title>
       <Text
-        style={{ textAlign: 'center', marginBottom: '1rem' }}
+        style={{ textAlign: 'justify', marginBottom: '1rem' }}
         fw={500}
         c="light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0))"
       >

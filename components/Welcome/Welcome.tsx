@@ -42,7 +42,7 @@ export function Welcome() {
           <Text
             fw={500}
             c="light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0))"
-            mb={50}
+            mb={25}
             style={{ textAlign: 'justify' }}
           >
             {' '}

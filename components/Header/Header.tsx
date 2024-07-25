@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Menu, Container, Group, Burger, Text, rem } from '@mantine/core';
-import { IconChevronRight, IconGauge, IconActivity, IconFingerprint } from '@tabler/icons-react';
+import { IconSchool, IconMail, IconUser, IconRocket } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Header.module.css';
 
@@ -12,18 +12,18 @@ const links = [
   {
     link: 'about',
     label: 'About Me',
-    icon: <IconFingerprint style={{ ...iconStyles }} />,
+    icon: <IconUser style={{ ...iconStyles }} />,
   },
   {
     link: 'projects',
     label: 'Projects',
-    icon: <IconActivity style={{ ...iconStyles }} />,
+    icon: <IconRocket style={{ ...iconStyles }} />,
   },
-  { link: 'education', label: 'Education', icon: <IconGauge style={{ ...iconStyles }} /> },
+  { link: 'education', label: 'Education', icon: <IconSchool style={{ ...iconStyles }} /> },
   {
     link: 'contact',
     label: 'Contact',
-    icon: <IconChevronRight style={{ ...iconStyles }} />,
+    icon: <IconMail style={{ ...iconStyles }} />,
   },
 ];
 
