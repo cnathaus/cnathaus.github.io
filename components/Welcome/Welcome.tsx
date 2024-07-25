@@ -6,7 +6,7 @@ import img3 from '@/assets/thumbnails/welcome_image_3.jpeg';
 import classes from './Welcome.module.css';
 
 function downloadCV() {
-  window.open('/CV.pdf', '_blank');
+  window.open('/CV_Christian_Nathaus.pdf', '_blank');
 }
 
 // TODO: make mobile version work. i.e. put text up top, then images below
@@ -48,7 +48,7 @@ export function Welcome() {
             {' '}
             I&apos;m passionate about enhancing human-robot interactions and leveraging AI methods
             to develop robots that are useful in the real world. I have gained experience in
-            robotics research and software development through my studies as well as various
+            robotics research and software development through my studies, as well as various
             internships and projects. In my free time I enjoy sports climbing, road biking, and
             playing beach volleyball. Find out more about me below!
           </Text>

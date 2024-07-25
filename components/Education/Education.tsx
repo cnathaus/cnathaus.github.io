@@ -11,7 +11,7 @@ interface TimeLineAvatarProps {
 const bulletSize = 96;
 
 function downloadCV() {
-  window.open('/CV.pdf', '_blank');
+  window.open('/CV_Christian_Nathaus.pdf', '_blank');
 }
 
 function timelineAvatar({ src, imageProps }: TimeLineAvatarProps) {
