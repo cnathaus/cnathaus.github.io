@@ -13,14 +13,14 @@ function downloadCV() {
 
 export function Welcome() {
   return (
-    <Container id="about" size="md">
+    <Container id="about" size="lg">
       <Grid justify="center" align="center" mt={75} gutter={60}>
         <Grid.Col span="content" order={{ base: 2, md: 1, lg: 1 }}>
           <Image radius="md" h={400} src={img.src} fit="contain" />
           {/* <Image radius="md" h={400} src={img2.src} fit="contain" />
           <Image radius="md" h={400} src={img3.src} fit="contain" /> */}
         </Grid.Col>
-        <Grid.Col span={{ base: 12, md: 5, lg: 5 }} order={{ base: 1, md: 2, lg: 2 }}>
+        <Grid.Col span={{ base: 12, md: 6, lg: 6 }} order={{ base: 1, md: 2, lg: 2 }}>
           <Title
             className={classes.title}
             // ta="center"
