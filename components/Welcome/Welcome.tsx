@@ -1,4 +1,4 @@
-import { Title, Text, Image, Grid } from '@mantine/core';
+import { Container, Title, Text, Image, Grid } from '@mantine/core';
 import { GradientOutlineButton } from '@/components/GradientOutlineButton/GradientOutlineButton';
 // import PlaceholderImage from '../PlaceholderImage/PlaceholderImage';
 import img from '@/assets/thumbnails/welcome_image_2_1.jpeg';
@@ -13,7 +13,7 @@ function downloadCV() {
 
 export function Welcome() {
   return (
-    <div id="about">
+    <Container id="about" size="md">
       <Grid justify="center" align="center" mt={75} gutter={60}>
         <Grid.Col span="content" order={{ base: 2, md: 1, lg: 1 }}>
           <Image radius="md" h={400} src={img.src} fit="contain" />
@@ -61,6 +61,6 @@ export function Welcome() {
           <Image radius="md" h={400} src={img3.src} fit="contain" />
         </Grid.Col>
       </Grid>
-    </div>
+    </Container>
   );
 }
