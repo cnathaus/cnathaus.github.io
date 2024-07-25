@@ -132,8 +132,8 @@ export const projects: Project[] = [
     technologies: [Technology.Robotics],
     description: (
       <Text fw={500} c="light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0))">
-        For a practical course in cooperation with RobCo (link) we integrated a welding machine onto
-        the startup&apos;s modular robot. The tasks for this included acquiring a suitable welding
+        For a practical course in cooperation with RobCo we integrated a welding machine onto the
+        startup&apos;s modular robot. The tasks for this included acquiring a suitable welding
         machine, designing and building an enclosure for mounting the robot, and programming both
         the robot and welding machine. This project&apos;s main challenge was the many hours of
         fine-tuning the welding process, which requires{' '}
