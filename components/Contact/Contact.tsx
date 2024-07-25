@@ -14,7 +14,7 @@ export function Contact() {
               textAlign: 'center',
               color: 'var(--mantine-color-default-color)',
               marginBottom: '1.5rem',
-              marginTop: '3rem',
+              marginTop: '1rem',
             }}
           >
             Contact Me
