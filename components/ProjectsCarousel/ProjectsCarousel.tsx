@@ -126,7 +126,7 @@ export function ProjectsCarousel() {
               textAlign: 'center',
               color: 'var(--mantine-color-default-color)',
               marginBottom: '2rem',
-              marginTop: '3rem',
+              marginTop: '1rem',
             }}
           >
             {/* Some projects I&#39;ve worked on. */}
