@@ -1,6 +1,6 @@
 import { AspectRatio, Badge, Container, Group, Stack, Text, Title } from '@mantine/core';
 import { Project, technologyGradientColorMap } from '@/assets/data/projects';
-import classes from './ProjectModal.module.css';
+import classes from './ProjectModal.module.scss';
 //
 interface ProjectModalProps extends Project {}
 
@@ -21,7 +21,9 @@ export function ProjectModal({
           {title}
         </Title>
         {description}
-        <Title order={5}>Skills</Title>
+        <Title order={5} c="var(--mantine-color-default-color)">
+          Skills
+        </Title>
         <Group gap="xs">
           {technologies.map((tech) => {
             const gradient = technologyGradientColorMap[tech];
@@ -52,7 +54,9 @@ export function ProjectModal({
         </Group>
         {video ? (
           <>
-            <Title order={5}>Video</Title>
+            <Title order={5} c="var(--mantine-color-default-color)">
+              Video
+            </Title>
             <AspectRatio ratio={16 / 9}>
               <iframe
                 src={video}

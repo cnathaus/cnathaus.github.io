@@ -53,6 +53,7 @@ function Card(props: CardProps) {
             const gradient = technologyGradientColorMap[tech];
             return (
               <Badge
+                key={tech}
                 styles={{
                   root: {
                     background: `linear-gradient(to right, white, white), linear-gradient(45deg, ${gradient.startColor}, ${gradient.midColor}, ${gradient.endColor})`,
@@ -114,11 +115,16 @@ export function ProjectsCarousel() {
   ));
 
   return (
-    <Container size="xl" className={classes.container} id="projects">
+    <Container size="xl" id="projects">
       <Title
         order={2}
         className={classes.title}
-        style={{ textAlign: 'center', color: 'black', marginBottom: '2rem', marginTop: '2rem' }}
+        style={{
+          textAlign: 'center',
+          color: 'var(--mantine-color-default-color)',
+          marginBottom: '2rem',
+          marginTop: '3rem',
+        }}
       >
         {/* Some projects I&#39;ve worked on. */}
         Work Experience & Projects
@@ -129,9 +135,9 @@ export function ProjectsCarousel() {
         align="start"
         slidesToScroll={1}
         withIndicators
-        // plugins={[autoplay.current]}
-        // onMouseEnter={autoplay.current.stop}
-        // onMouseLeave={autoplay.current.reset}
+        plugins={[autoplay.current]}
+        onMouseEnter={autoplay.current.stop}
+        onMouseLeave={autoplay.current.reset}
       >
         {slides}
       </Carousel>

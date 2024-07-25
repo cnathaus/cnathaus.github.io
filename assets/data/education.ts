@@ -39,7 +39,7 @@ export const education: EducationEntry[] = [
     date: '2023',
     logo: { src: yonsei_logo.src, imageProps: { scale: 0.7 } },
     category: Category.Education,
-    details: ['top university in South Korea']
+    // details: ['top university in South Korea'],
   },
   {
     title: 'M.Sc. Robotics, Cognition, Intelligence',
@@ -47,7 +47,7 @@ export const education: EducationEntry[] = [
     date: '2020 - 2023',
     logo: { src: tum_logo.src, imageProps: { scale: 0.7 } },
     category: Category.Education,
-    details: ['passed with distinction']
+    details: ['passed with distinction'],
   },
   {
     title: 'Semester Abroad',
@@ -55,7 +55,7 @@ export const education: EducationEntry[] = [
     date: '2019',
     logo: { src: nus_logo.src, imageProps: { scale: 0.7, marginTop: 8 } },
     category: Category.Education,
-    details: ['top 8 university worldwide', 'received DAAD PROMOS scholarship', 'took classes in Robotics'],
+    details: ['received DAAD PROMOS scholarship'],
   },
   {
     title: 'B.Sc. Mechanical Engineering',
@@ -63,6 +63,6 @@ export const education: EducationEntry[] = [
     date: '2016 - 2020',
     logo: { src: rwth_logo.src, imageProps: { scale: 0.7 } },
     category: Category.Education,
-    details: ['Dean\'s List (top 5% of graduating class)'],
+    details: ["Dean's List (top 5% of graduating class)"],
   },
 ];

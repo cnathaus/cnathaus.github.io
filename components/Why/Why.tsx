@@ -7,7 +7,12 @@ export function Why({ companyName }: { companyName: string }) {
       <Title
         order={2}
         className={classes.title}
-        style={{ textAlign: 'center', color: 'black', marginBottom: '2rem', marginTop: '2rem' }}
+        style={{
+          textAlign: 'center',
+          color: 'var(--mantine-color-default-color)',
+          marginBottom: '2rem',
+          marginTop: '2rem',
+        }}
       >
         Why {companyName}?
       </Title>
