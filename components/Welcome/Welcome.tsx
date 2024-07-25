@@ -2,7 +2,6 @@ import { Title, Text, Image, Grid } from '@mantine/core';
 import { GradientOutlineButton } from '@/components/GradientOutlineButton/GradientOutlineButton';
 // import PlaceholderImage from '../PlaceholderImage/PlaceholderImage';
 import img from '@/assets/thumbnails/welcome_image_2_1.jpeg';
-import img2 from '@/assets/thumbnails/welcome_image_2.jpeg';
 import img3 from '@/assets/thumbnails/welcome_image_3.jpeg';
 import classes from './Welcome.module.css';
 

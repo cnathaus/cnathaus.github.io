@@ -5,7 +5,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 });
 
 export default withBundleAnalyzer({
-  // output: 'export', // uncomment for deployment
+  output: 'export', 
   reactStrictMode: false,
   images: {
     unoptimized: true,
