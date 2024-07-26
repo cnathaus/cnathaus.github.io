@@ -105,6 +105,7 @@ export function Education() {
                         ))}
                       </List>
                     )}
+                    {!item.details && <div style={{ height: '1.3rem' }} />}
                   </Timeline.Item>
                 );
               })}
